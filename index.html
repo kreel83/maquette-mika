@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.8.4/semantic.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="flickity.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+<section class="entete">
+    <div>
+        <div>Daily</div>
+        <div>Défis</div>
+
+    </div>
+</section>
+<section class="defisMenu">
+    <div class="menu active" data-page="page1">4 Défis en cours</div>
+    <div class="menu inactive" data-page="page2">Choisir un défi</div>
+</section>
+
+<div class="page container" id="page1">
+    <section class="barre">
+        <div class="ui four column grid">
+            <div class="row">
+                <div class="column">
+                    <div class="ui progress tiny" data-total="100" data-value="100">
+                        <div class="bar" style="background-color: #f9747a;"></div>
+                        <div class="progress" style="background-color: #f7a0a3"></div>
+                    </div>
+
+                </div>
+                <div class="column">
+                    <div class="ui progress tiny" data-total="100" data-value="100">
+                        <div class="bar" style="background-color: #ffccf5;"></div>
+                        <div class="progress" style="background-color: #f4d9ef;"></div>
+                    </div>
+
+                </div>
+                <div class="column">
+                    <div class="ui progress tiny" data-total="100" data-value="100">
+                        <div class="bar" style="background-color: #70e8cd"></div>
+                        <div class="progress" style="background-color: #b0e8db;"></div>
+                    </div>
+
+                </div>
+                <div class="column">
+                    <div class="ui progress tiny" data-total="100" data-value="100">
+                        <div class="bar" style="background-color: #f9747a;"></div>
+                        <div class="progress" style="background-color: #f7a0a3;"></div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <div class="formediaquery">
+        <div class="car_div">
+            <section>
+                <div class="carousel">
+                    <div class="carousel-cell">
+                        <div class="tl"></div>
+                        <div class="tr">INSTRUCTIONS</div>
+                        <div class="tc"></div>
+                    </div>
+                    <div class="carousel-cell">
+                        <div class="tl"></div>
+                        <div class="tr">INSTRUCTIONS</div>
+                        <div class="tc"></div>
+                    </div>
+                    <div class="carousel-cell">
+                        <div class="tl"></div>
+                        <div class="tr">INSTRUCTIONS</div>
+                        <div class="tc"></div>
+                    </div>
+
+                </div>
+            </section>
+            <section class="boutons">
+                <div class="btn inactive">Abandonner<span>X</span></div>
+                <div class="btn active">Ajouter ma séance<span>+</span></div>
+            </section>
+        </div>
+        <div class="cal_div">
+            <section class="calendrier">
+                <div id="month">
+                    <div class="previous"><</div>
+                    <div class="month"></div>
+                    <div class="next">></div>
+                </div>
+
+                <div class="week ui grid">
+                    <div class="seven column row">
+                        <div class="column">SUN</div>
+                        <div class="column">MON</div>
+                        <div class="column">TUE</div>
+                        <div class="column">WED</div>
+                        <div class="column">THU</div>
+                        <div class="column">FRI</div>
+                        <div class="column">SAT</div>
+                    </div>
+                </div>
+                <div class="days ui grid">
+                    <div class="seven column row" id="cal">
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="formediaquery">
+        <div class="instru">
+            <section class="instructions">
+                <div class="titre">instructions</div>
+                <div class="content"></div>
+                <div class="video">Voir la vidéo :</div>
+                <div class="url"></div>
+            </section>
+        </div>
+        <div class="caract_div">
+            <section class="caracteristiques"></section>
+            <section class="savoir">
+                <div class="titreSavoir">LE SAVIEZ-VOUS ?</div>
+                <div class="trait"></div>
+                <div class="contentSavoir">
+                    L'imagerie mentale est une technique utilisée dans le sport de haut niveau. Ell est redoutablement
+                    efficace.
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+<div class="page" id="page2" hidden>
+    <div style="height: 800px;background-color: grey;display: flex;justify-content: center;align-items: center">A
+        faire
+    </div>
+</div>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.8.4/semantic.min.js"></script>
+<script src="flickity.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>
+
+<script src="app.js"></script>
+</html>

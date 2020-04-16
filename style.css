@@ -1,0 +1,400 @@
+@font-face {
+    font-family: 'belinda';
+
+    src: url('font/Belinda\ Script.otf') format('truetype'),
+    url('font/Belinda\ Script.ttf') format('ttf');
+    font-weight: 100;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EFEFEF;
+}
+
+/******************************************************************************/
+/* Défi menu*/
+/******************************************************************************/
+
+.defisMenu {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 26px;
+    margin-bottom: 30px;
+}
+
+.defisMenu > .menu {
+    font-family: "Arial Rounded MT Bold", sans-serif;
+    font-size: 18px;
+    width: 50%;
+    text-align: center;
+
+}
+
+.defisMenu > .menu.active {
+    color: #734b98;
+    border-bottom: #734b98 4px solid;
+    padding-bottom: 10px;
+}
+
+.defisMenu > .menu.inactive {
+    color: #9b9b9b;
+    border-bottom: #9b9b9b 2px solid;
+    padding-bottom: 9px;
+}
+
+/******************************************************************************/
+/* Entete*/
+/******************************************************************************/
+
+.entete {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    margin-top: 10px;
+    font-family: 'Roboto', sans-serif;
+    color: #3f2e4c;
+
+}
+
+.entete > div {
+    margin-top: 10px;
+    font-weight: bolder;
+    font-size: 24px;
+
+}
+
+.entete > div > div:last-child {
+    padding-left: 8px;
+    margin-top: 5px;
+}
+
+/******************************************************************************/
+/* Boutons*/
+/******************************************************************************/
+
+.boutons {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 8px;
+
+}
+
+.btn {
+    color: white;
+    font-size: 18px;
+    padding: 8px 15px;
+    text-align: center;
+
+    border: none;
+    height: 36px;
+    border-radius: 5px;
+}
+
+.btn > span {
+    margin-left: 10px;
+    color: white;
+    font-size: 18px;
+    width: 50px;
+    height: 50px;
+    font-weight: bolder;
+}
+
+.btn.inactive {
+    background-color: #ff5f66;
+    opacity: 0.5;
+}
+
+.btn.active {
+    background: linear-gradient(to right, #ff5f66 0%, #ff895f 100%);
+
+}
+
+/******************************************************************************/
+/* Barre de progression*/
+/******************************************************************************/
+
+.barre {
+    margin: 0 16px
+}
+
+.tiny:first-child, .tiny:last-child {
+    background-color: #f9747a
+}
+
+.tiny:nth-child(1) {
+    background-color: #ffccf5;
+}
+
+.tiny:nth-child(2) {
+    background-color: #70e8cd;
+}
+
+/******************************************************************************/
+/* Carousel*/
+/******************************************************************************/
+
+.defi.active {
+    background-color: #f9747a;
+}
+
+.defi.inactive {
+    background-color: #5fe6c7;
+}
+
+.defi {
+    width: 250px;
+    height: 200px;
+    border: 8px solid #fff;
+    margin-right: 10px;
+}
+
+.carousel {
+    background: transparent;
+}
+
+.carousel-cell {
+    position: relative;
+    width: 66%;
+    height: 200px;
+    margin-right: 40px;
+    background: #5fe6c7;
+    border: 8px solid white;
+}
+
+.tc {
+    font-family: belinda, sans-serif;
+    position: absolute;
+    top: 35px;
+    width: 90%;
+    text-align: center;
+    color: white;
+    font-size: 33px;
+    line-height: 50px;
+    font-weight: light;
+    transform: rotate(-7deg);
+    left: 15px
+
+}
+
+/* cell number */
+.carousel-cell:before {
+    display: block;
+    text-align: center;
+    line-height: 200px;
+    font-size: 80px;
+    color: white;
+}
+
+.tl, .tr {
+    position: absolute;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 12px;
+    color: white;
+}
+
+.tl {
+    left: 5px;
+    top: 5px;
+
+}
+
+.tr {
+    right: 20px;
+    top: 5px;
+}
+
+/******************************************************************************/
+/* Calendrier*/
+/******************************************************************************/
+
+.calendrier {
+    margin: 0 16px;
+}
+
+#month {
+    margin: 20px 0px;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+#cal div {
+
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    padding-top: 8px;
+    margin: 1px 0;
+
+}
+
+.dateActive.first {
+    border-radius: 15px 0 0 15px;
+}
+
+.dateActive.last {
+    border-radius: 0 15px 15px 0;
+}
+
+.dateActive {
+    color: white
+}
+
+.dateActiveR {
+    background-color: #f9747a;
+}
+
+.dateActiveP {
+    background-color: #f4a2a6;
+}
+
+.jour {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 30px;
+    height: 30px;
+    margin: 1px;
+
+}
+
+.jourActuel {
+    background-color: #fff;
+
+    border-radius: 50%;
+    color: grey
+}
+
+/******************************************************************************/
+/* Instruction*/
+/******************************************************************************/
+
+.instructions {
+    margin: 10px;
+    padding: 32px 16px;
+    background-color: yellow;
+    border: 8px solid white;
+    height: auto;
+    font-family: "Arial Rounded MT Bold", sans-serif;
+}
+
+.titre {
+
+    display: block;
+    width: 20%;
+    margin: 0 auto 16px auto;
+    font-size: 12px;
+    padding: 15px 0;
+    border-bottom: 1px solid;
+    text-align: center;
+    color: black;
+
+}
+
+.content {
+    padding: 8px;
+    font-size: 16px;
+    line-height: 2.2rem;
+    text-align: center;
+}
+
+.content span {
+    font-size: 25px;
+}
+
+.video {
+    font-size: 16px;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.url {
+    font-size: 16px;
+    text-align: center;
+}
+
+/******************************************************************************/
+/* Caracteristiques*/
+/******************************************************************************/
+
+.caracteristiques {
+    margin-top: 26px;
+}
+
+.caracteristiques > .ligne {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid black;
+    padding: 8px;
+    margin: 0 16px;
+}
+
+.caracteristiques::after {
+
+    border-bottom: 1px solid black;
+
+}
+
+.caracteristiques > .ligne {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3rem;
+}
+
+.caracteristiques > .ligne > .droite {
+    font-weight: bold;
+
+}
+
+/******************************************************************************/
+/* savoir*/
+/******************************************************************************/
+
+.savoir {
+    padding: 26px;
+    position: relative;
+
+}
+
+.titreSavoir {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.trait {
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 60px;
+    height: 47px;
+    border-bottom: 1px solid black;
+    position: absolute;
+}
+
+.contentSavoir {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.formediaquery {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 640px) {
+    .formediaquery {
+        display: flex;
+        flex-direction: row;
+    }
+    .cal_div, .car_div, .instru, .caract_div{
+        width: 50%;
+    }
+}
